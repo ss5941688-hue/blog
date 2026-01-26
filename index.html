@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sarah's Corner</title>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+img{
+    border-radius:8px
+}
+a:link, a:visited {
+  background-color: #739c7b75;
+  color: rgb(0, 0, 0);
+  padding: 14px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 7px;
+}
+
+a:hover, a:active {
+  background-color: rgb(69, 97, 80);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  padding: 20px;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(61, 54, 74);
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  font-size:small;
+  width: 100%;
+  height: 15%; /* only for demonstration, should be removed */
+  padding:15px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display:flex;
+    flex-direction: row;
+    gap:40px;
+}
+
+
+article {
+  float: left;
+  padding: 30px;
+  width: 100%;
+  background-color: #f1f1f177;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #5c3763;
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 600px;
+    height: 600px;
+  }
+}
+</style>
+</head>
+<body background="Paradise Tree.jpeg">
+
+<header> ⊹₊˚‧︵‿₊୨ Sarah's Corner ୧₊‿︵‧˚₊⊹</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="home.html">❤︎ HOME ❤︎</a></li>
+      <li><a href="About.html">❤︎ ABOUT ❤︎</a></li>
+      <li><a href="blog.html">❤︎ BLOG ❤︎</a></li>
+      <li><a href="pets.html">❤︎ PETS ❤︎</a></li>
+      <li><a href="secret.html">❤︎ MEMBERS ONLY ❤︎</a></li>
+    </ul>
+  </nav>
+
+  <hr 100% color="black">
+  <article>
+    <h1>✿.˚Home ˚✿.</h1>
+    <br><br>
+
+    <h3>Wondering how to propogate Pothos?</h3>
+    <img src="blah.png" width="300" height="300">
+    <p><a href="https://studentweb.cdm.depaul.edu/ssmit336/a2.html"> <em>Click me</em> to Learn How!</a></p>
+    <br><br>
+    <h3>Where can I see more fish content?</h3>
+    <p>You can see fish and aquascaping content over on my <a href="https://www.tiktok.com/@sililotus" target="_blank"> TikTok</a>, sillilotus.</p>
+
+  </article>
+</section>
+
+
+
+</body>
+</html>
+
