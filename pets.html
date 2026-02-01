@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sarah's Corner</title>
 <head>
+  <link rel="stylesheet" href="style.css">
   <script type="text/javascript">
 // <![CDATA[
 var colour="random"; // in addition to "random" can be set to any valid colour eg "#f0f" or "red"
@@ -138,17 +139,9 @@ function mouse(e) {
     x=event.x+sleft;
   }
 }
-
-window.onscroll=set_scroll;
-function set_scroll() {
-  if (typeof(self.pageYOffset)=='number') {
-    sdown=self.pageYOffset;
-    sleft=self.pageXOffset;
-  }
-  else if (document.body && (document.body.scrollTop || document.body.scrollLeft)) {
-    sdown=document.body.scrollTop;
+down=document.body.scrollTop;
     sleft=document.body.scrollLeft;
-  }
+}
   else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
     sleft=document.documentElement.scrollLeft;
     sdown=document.documentElement.scrollTop;
@@ -157,6 +150,7 @@ function set_scroll() {
     sdown=0;
     sleft=0;
   }
+}
 }
 
 window.onresize=set_width;
@@ -202,93 +196,7 @@ function newColour() {
 }
 // ]]>
 </script>
-<style>
-* {
-  box-sizing: border-box;
-}
-img{
-    border-radius:8px
-}
 
-a:link, a:visited {
-  background-color: #739c7b75;
-  color: rgb(0, 0, 0);
-  padding: 14px 14px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 7px;
-}
-
-a:hover, a:active {
-  background-color: rgb(69, 97, 80);
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  cursor:url("pixelcursor.png"),pointer;
-}
-
-  
-
-
-/* Style the header */
-header {
-  padding: 20px;
-  text-align: center;
-  font-size: 40px;
-  color: rgb(61, 54, 74);
-}
-
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  font-size:small;
-  width: 100%;
-  height: 15%; /* only for demonstration, should be removed */
-  padding:15px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    display:flex;
-    flex-direction: row;
-    gap:40px;
-}
-
-
-article {
-  float: left;
-  padding: 30px;
-  width: 100%;
-  background-color: #f1f1f177;
-}
-
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
-footer {
-  background-color: #5c3763;
-  padding: 30px;
-  text-align: center;
-  color: white;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 600px;
-    height: 600px;
-  }
-}
-</style>
 </head>
 <body background="Paradise Tree.jpeg">
 
@@ -313,7 +221,7 @@ footer {
     <hr width="100%" color="black">
 
     <h2>⋆🐾⋆ Dogs ⋆🐾⋆</h2>
-    <br>
+
     <h3><i>Sage •ﻌ• </i></h3>
     <img src="sage.png" alt="Sage the Morkie" width="200" height="200">
     <img src="sage and i.png" alt="sage and i in wyoming" width="200" height="100">
@@ -328,11 +236,11 @@ footer {
     <p>This is my dog named Stella. She is the same breed as Sage, a Morkie. Her birthday is July 5th, 2020. She is my little baby girl. She loves adventures, exploring the world, and cuddles with everyone who lets her. She is extremely loving, but can be a little jealous of her big-brother Sage at times. You would also think she's a cat because she loves to climb high up on furniture and is extremely flexible (she will somehow fit into small places). The way to her heart is letting her give you a million kisses and playing with her!</p>
     <hr width="100%" color="black">
     <h2> ‧｡⋆𓆝 Fish 𓆝⋆｡‧</h2>
-    <br>
+  
     <h3><i>Angel 𓆝 ⋆.</i></h3>
     <img src="ange.JPG"width="250" height="250"> 
     <img src="angel1.jpeg" width="200" height="250">
-    <img src="angel2.jpeg" width="225" height="225">
+    <img src="angel2.jpeg" width="230" height="250">
      <p>This is my first, betta ever: Angel. She is a female dumbo elepehant ear Betta. I brought her home on August 14, 2025. She is the reason I got into fish in the first place. She is the sweetest girl ever and this has 6 pygmy cory tank mates with her!</p>
      <br>
     <h3><i>Clementine 𓆝 ⋆</i></h3>
@@ -340,17 +248,19 @@ footer {
     <p> This is my third betta Clementine. She is the cutest most curious girl ever. She has beautiful striking colors and would be considered a "koi galaxy candy betta." She is always eager to explore and eat food! I brought her home October 22, 2025.</p>
     <br>
     <h3><i>Aquamarine 𓆝 ⋆</i></h3>
-    <img src="aquamarine.jpeg" width="250 height=250">
+    <img src="aquamarine2.jpeg" width="250 height=250">
+        <img src="aquamarine twin.jpeg" width="250 height=250>"
     <p>This is one of the girls in my community tank, Aquamarine. She is almost the identical twin as JellyBean, just has a slightly more teal tail color than JellyBean. I brought her home January 10, 2026. She is a double-tail plakat betta.</p>
 
     <br>
-    <h3><i>BlueBerry 𓆝 ⋆</i></h3>
+    <h3><i>Blueberry 𓆝 ⋆</i></h3>
     <img src="blueberry2.jpeg" width="250 height=250">
-    <img src="blueberry3.jpeg" width=200 height=200">
+    <img src="blueberry3.jpeg" width=250 height=250">
     <p>This is one of the girls in my community tank, Blueberry. I brought her home January 10, 2026. She is a double-tail plakat betta.</p>
     <br>
     <h3><i>JellyBean 𓆝 ⋆</i></h3>
     <img src="jellybean.jpeg" width="250" height="250">
+    <img src="aquamarine.jpeg" width="250" height=250>"
     <p>This is one of the girls in my community tank, JellyBean. I brought her home January 10, 2026. She is a double-tail plakat betta. Again, her and Aquamarine look like near-identical twins. Instead of teal, JellyBean has a more dark blue tail.</p>
     <br>
     <h3><i>Poppy 𓆝 ⋆</i></h3>
