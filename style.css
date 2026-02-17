@@ -1,11 +1,33 @@
+@font-face {
+  font-family: header;
+  src: url(Romantic\ copy.ttf);
+}
 
+@font-face {
+  font-family: text;
+  src: url(Winter\ copy.otf);
+}
+
+@font-face {
+  font-family: cool;
+  src: url(Papernotes\ copy.ttf);
+}
 * {
   box-sizing: border-box;
+   position: static;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  height: auto;
+  margin: center;
 }
 img{
-    border-radius:8px
+  border-radius:8px
 }
 a:link, a:visited {
+  font-family: cool;
+  letter-spacing: 2px;
   background-color: #739c7b75;
   color: rgb(0, 0, 0);
   padding: 14px 14px;
@@ -15,30 +37,68 @@ a:link, a:visited {
   border-radius: 7px;
 }
 
-a:hover, a:active {
+h1{
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-family: text;
+}
+
+a:hover{
+    font-family: cool;
+  font-size: 20px;
+  color:#b2c7e5;
+  background-color: rgba(43, 58, 44, 0.784);
+}
+
+ a:active  {
+    font-family: cool;
   background-color: rgb(69, 97, 80);
 }
 
 body {
+   position: static;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  height: auto;
+  margin: center;
   font-family: Arial, Helvetica, sans-serif;
    cursor:url("pixelcursor.png"),pointer;
 }
 
 /* Style the header */
 header {
+  font-family: header;
+  position: static;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  height: auto;
+  margin: center;
   padding: 20px;
   text-align: center;
-  font-size: 40px;
+  font-size: 60px;
+  letter-spacing: 3px;
   color: rgb(61, 54, 74);
 }
 
 /* Create two columns/boxes that floats next to each other */
 nav {
-  float: left;
-  font-size:small;
+  position: static;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  height: auto;
+  margin: center;
+  float: center;
+  font-size:15px;
   width: 100%;
   height: 15%; /* only for demonstration, should be removed */
   padding:15px;
+  text-align: center;
 }
 
 /* Style the list inside the menu */
@@ -50,8 +110,14 @@ nav ul {
     gap:40px;
 }
 
-
 article {
+  position: static;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  height: auto;
+  margin: center;
   float: left;
   padding: 30px;
   width: 100%;
